@@ -1,0 +1,1 @@
+<view class="container"><uni-section wx:if="{{b}}" u-s="{{['d']}}" u-i="0a82c86c-0" bind:__l="__l" u-p="{{b}}"><uni-card wx:if="{{a}}" u-s="{{['d']}}" u-i="0a82c86c-1,0a82c86c-0" bind:__l="__l" u-p="{{a}}"><text class="uni-body"></text></uni-card></uni-section><button class="button" type="primary">切换菜单方向</button></view>
