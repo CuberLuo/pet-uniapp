@@ -49,11 +49,16 @@ const submitRegister = () => {
     .then((res) => {
       userRegister(res)
         .then((res) => {
-          console.log(res)
-          uni.showToast({
-            title: '注册成功'
-          })
-          uni.redirectTo({ url: '/pages/login/login' })
+          if (res.data.code === 0) {
+            uni.showToast({
+              title: '注册成功'
+            })
+            uni.redirectTo({ url: '/pages/login/login' })
+          } else if (res.data.code === 1006) {
+            uni.showToast({
+              title: '用户名已存在'
+            })
+          }
         })
         .catch((err) => {
           console.log(err)

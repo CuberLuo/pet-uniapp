@@ -1,0 +1,10 @@
+
+.cameraContainer[data-v-1ed12026] {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #f9d0c5;
+}
+.camera[data-v-1ed12026] {
+  width: 100px;
+  border: 2px solid #2fd699;
+}

@@ -55,9 +55,21 @@ const submitLogin = () => {
         .dispatch('loginSystem', res)
         .then((res) => {
           console.log(res)
-          uni.showToast({
-            title: '登录成功'
-          })
+          if (res.data.code === 0) {
+            uni.showToast({
+              title: '登录成功'
+            })
+          } else if (res.data.code === 1001) {
+            uni.showToast({
+              title: '用户名不存在',
+              icon: 'error'
+            })
+          } else if (res.data.code === 1002) {
+            uni.showToast({
+              title: '密码错误',
+              icon: 'error'
+            })
+          }
         })
         .catch((err) => {
           console.log(err)

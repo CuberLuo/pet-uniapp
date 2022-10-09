@@ -51,8 +51,8 @@ if (uni.restoreGlobal) {
     }
     return target;
   };
-  const _sfc_main$7 = {};
-  function _sfc_render$4(_ctx, _cache) {
+  const _sfc_main$c = {};
+  function _sfc_render$7(_ctx, _cache) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "container" }, [
       vue.createElementVNode("navigator", { url: "../login/login" }, [
         vue.createElementVNode("button", {
@@ -68,7 +68,7 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  var PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$4], ["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/pages/index/index.vue"]]);
+  var PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$7], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/pages/index/index.vue"]]);
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
       uni.__log__(type, filename, ...args);
@@ -1254,7 +1254,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$6 = {
+  const _sfc_main$b = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -1298,14 +1298,14 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("text", {
       style: vue.normalizeStyle({ color: $props.color, "font-size": $options.iconSize }),
       class: vue.normalizeClass(["uni-icons", ["uniui-" + $props.type, $props.customPrefix, $props.customPrefix ? $props.type : ""]]),
       onClick: _cache[0] || (_cache[0] = (...args) => $options._onClick && $options._onClick(...args))
     }, null, 6);
   }
-  var __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$3], ["__scopeId", "data-v-a2e81f6e"], ["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
+  var __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$6], ["__scopeId", "data-v-a2e81f6e"], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/uni_modules/uni-icons/components/uni-icons/uni-icons.vue"]]);
   function obj2strClass(obj) {
     let classess = "";
     for (let key in obj) {
@@ -1324,7 +1324,7 @@ if (uni.restoreGlobal) {
     }
     return style;
   }
-  const _sfc_main$5 = {
+  const _sfc_main$a = {
     name: "uni-easyinput",
     emits: ["click", "iconClick", "update:modelValue", "input", "focus", "blur", "confirm", "clear", "eyes", "change"],
     model: {
@@ -1593,8 +1593,8 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
+  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-easyinput", { "uni-easyinput-error": $options.msg }]),
       style: vue.normalizeStyle($options.boxStyle)
@@ -1680,8 +1680,8 @@ if (uni.restoreGlobal) {
       ], 6)
     ], 6);
   }
-  var __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$2], ["__scopeId", "data-v-abe12412"], ["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue"]]);
-  const _sfc_main$4 = {
+  var __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$5], ["__scopeId", "data-v-abe12412"], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue"]]);
+  const _sfc_main$9 = {
     name: "uniFormsItem",
     options: {
       virtualHost: true
@@ -1964,7 +1964,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["uni-forms-item", ["is-direction-" + $data.localLabelPos, $data.border ? "uni-forms-item--border" : "", $data.border && $data.isFirstBorder ? "is-first-border" : ""]])
     }, [
@@ -1990,7 +1990,7 @@ if (uni.restoreGlobal) {
       ])
     ], 2);
   }
-  var __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$1], ["__scopeId", "data-v-61dfc0d0"], ["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
+  var __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$4], ["__scopeId", "data-v-61dfc0d0"], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue"]]);
   var pattern = {
     email: /^\S+?@\S+?\.\S+?$/,
     idcard: /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/,
@@ -2550,7 +2550,7 @@ if (uni.restoreGlobal) {
       return false;
     }
   };
-  const _sfc_main$3 = {
+  const _sfc_main$8 = {
     name: "uniForms",
     emits: ["validate", "submit"],
     options: {
@@ -2792,14 +2792,14 @@ if (uni.restoreGlobal) {
       _isEqual: isEqual
     }
   };
-  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-forms" }, [
       vue.createElementVNode("form", null, [
         vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
       ])
     ]);
   }
-  var __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render], ["__scopeId", "data-v-7ae0e404"], ["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
+  var __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$3], ["__scopeId", "data-v-7ae0e404"], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/uni_modules/uni-forms/components/uni-forms/uni-forms.vue"]]);
   let baseUrl = "http://127.0.0.1:3000";
   const request = (options = {}) => {
     return new Promise((resolve, reject) => {
@@ -2817,18 +2817,18 @@ if (uni.restoreGlobal) {
   const userRegister = (data) => {
     return request({
       method: "post",
-      url: "/register",
+      url: "/user/register",
       data
     });
   };
   const userLogin = (data) => {
     return request({
       method: "post",
-      url: "/login",
+      url: "/user/login",
       data
     });
   };
-  const _sfc_main$2 = {
+  const _sfc_main$7 = {
     __name: "register",
     setup(__props) {
       const registerForm = vue.ref();
@@ -2857,24 +2857,30 @@ if (uni.restoreGlobal) {
       const submitRegister = () => {
         registerForm.value.validate().then((res) => {
           userRegister(res).then((res2) => {
-            formatAppLog("log", "at pages/register/register.vue:52", res2);
-            uni.showToast({
-              title: "\u6CE8\u518C\u6210\u529F"
-            });
+            if (res2.data.code === 0) {
+              uni.showToast({
+                title: "\u6CE8\u518C\u6210\u529F"
+              });
+              uni.redirectTo({ url: "/pages/login/login" });
+            } else if (res2.data.code === 1006) {
+              uni.showToast({
+                title: "\u7528\u6237\u540D\u5DF2\u5B58\u5728"
+              });
+            }
           }).catch((err) => {
-            formatAppLog("log", "at pages/register/register.vue:58", err);
+            formatAppLog("log", "at pages/register/register.vue:64", err);
             uni.showToast({
               title: "\u6CE8\u518C\u5931\u8D25",
               icon: "error"
             });
           });
         }).catch((err) => {
-          formatAppLog("log", "at pages/register/register.vue:66", "invalid form");
-          formatAppLog("log", "at pages/register/register.vue:67", err);
+          formatAppLog("log", "at pages/register/register.vue:72", "invalid form");
+          formatAppLog("log", "at pages/register/register.vue:73", err);
         });
       };
       return (_ctx, _cache) => {
-        const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0);
+        const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
         const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_1);
         const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_2);
         return vue.openBlock(), vue.createElementBlock("view", null, [
@@ -2926,7 +2932,7 @@ if (uni.restoreGlobal) {
       };
     }
   };
-  var PagesRegisterRegister = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/pages/register/register.vue"]]);
+  var PagesRegisterRegister = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/pages/register/register.vue"]]);
   function getDevtoolsGlobalHook() {
     return getTarget().__VUE_DEVTOOLS_GLOBAL_HOOK__;
   }
@@ -3928,7 +3934,7 @@ if (uni.restoreGlobal) {
     this._committing = committing;
   };
   Object.defineProperties(Store.prototype, prototypeAccessors);
-  const _sfc_main$1 = {
+  const _sfc_main$6 = {
     __name: "login",
     setup(__props) {
       const store2 = useStore();
@@ -3959,23 +3965,35 @@ if (uni.restoreGlobal) {
         loginForm.value.validate().then((res) => {
           store2.dispatch("loginSystem", res).then((res2) => {
             formatAppLog("log", "at pages/login/login.vue:57", res2);
-            uni.showToast({
-              title: "\u767B\u5F55\u6210\u529F"
-            });
+            if (res2.data.code === 0) {
+              uni.showToast({
+                title: "\u767B\u5F55\u6210\u529F"
+              });
+            } else if (res2.data.code === 1001) {
+              uni.showToast({
+                title: "\u7528\u6237\u540D\u4E0D\u5B58\u5728",
+                icon: "error"
+              });
+            } else if (res2.data.code === 1002) {
+              uni.showToast({
+                title: "\u5BC6\u7801\u9519\u8BEF",
+                icon: "error"
+              });
+            }
           }).catch((err) => {
-            formatAppLog("log", "at pages/login/login.vue:63", err);
+            formatAppLog("log", "at pages/login/login.vue:75", err);
             uni.showToast({
               title: "\u767B\u5F55\u5931\u8D25",
               icon: "error"
             });
           });
         }).catch((err) => {
-          formatAppLog("log", "at pages/login/login.vue:71", "invalid form");
-          formatAppLog("log", "at pages/login/login.vue:72", err);
+          formatAppLog("log", "at pages/login/login.vue:83", "invalid form");
+          formatAppLog("log", "at pages/login/login.vue:84", err);
         });
       };
       return (_ctx, _cache) => {
-        const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0);
+        const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
         const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_1);
         const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_2);
         return vue.openBlock(), vue.createElementBlock("view", null, [
@@ -4028,21 +4046,236 @@ if (uni.restoreGlobal) {
       };
     }
   };
-  var PagesLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/pages/login/login.vue"]]);
+  var PagesLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/pages/login/login.vue"]]);
+  const _sfc_main$5 = {};
+  function _sfc_render$2(_ctx, _cache) {
+    return vue.openBlock(), vue.createElementBlock("div", null, "\u5BA0\u7269\u4FE1\u606F");
+  }
+  var PagesPetInfoPetInfo = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$2], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/pages/petInfo/petInfo.vue"]]);
+  const _sfc_main$4 = {
+    __name: "petImgUpload",
+    setup(__props) {
+      const img_src = vue.ref("../../static/camera.png");
+      const imgClick = () => {
+        uni.chooseImage({
+          count: 1,
+          sizeType: ["original", "compressed"],
+          sourceType: ["album"],
+          success: function(res) {
+            formatAppLog("log", "at pages/petImgUpload/petImgUpload.vue:16", JSON.stringify(res.tempFilePaths));
+            img_src.value = res.tempFilePaths[0];
+            uni.uploadFile({
+              url: "http://127.0.0.1:3000/upload",
+              filePath: res.tempFilePaths[0],
+              name: "file",
+              formData: {
+                user: "test"
+              },
+              success: (uploadFileRes) => {
+                formatAppLog("log", "at pages/petImgUpload/petImgUpload.vue:26", uploadFileRes.data);
+              }
+            });
+          }
+        });
+      };
+      return (_ctx, _cache) => {
+        return vue.openBlock(), vue.createElementBlock("view", { class: "cameraContainer" }, [
+          vue.createElementVNode("img", {
+            src: img_src.value,
+            class: "camera",
+            onClick: imgClick
+          }, null, 8, ["src"])
+        ]);
+      };
+    }
+  };
+  var PagesPetImgUploadPetImgUpload = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-1ed12026"], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/pages/petImgUpload/petImgUpload.vue"]]);
+  const _sfc_main$3 = {};
+  function _sfc_render$1(_ctx, _cache) {
+    return vue.openBlock(), vue.createElementBlock("div", null, "\u5BA0\u7269\u58F0\u97F3\u4E0A\u4F20");
+  }
+  var PagesPetVoiceUploadPetVoiceUpload = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$1], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/pages/petVoiceUpload/petVoiceUpload.vue"]]);
+  const _sfc_main$2 = {
+    name: "UniCard",
+    emits: ["click"],
+    props: {
+      title: {
+        type: String,
+        default: ""
+      },
+      subTitle: {
+        type: String,
+        default: ""
+      },
+      padding: {
+        type: String,
+        default: "10px"
+      },
+      margin: {
+        type: String,
+        default: "15px"
+      },
+      spacing: {
+        type: String,
+        default: "0 10px"
+      },
+      extra: {
+        type: String,
+        default: ""
+      },
+      cover: {
+        type: String,
+        default: ""
+      },
+      thumbnail: {
+        type: String,
+        default: ""
+      },
+      isFull: {
+        type: Boolean,
+        default: false
+      },
+      isShadow: {
+        type: Boolean,
+        default: true
+      },
+      shadow: {
+        type: String,
+        default: "0px 0px 3px 1px rgba(0, 0, 0, 0.08)"
+      },
+      border: {
+        type: Boolean,
+        default: true
+      }
+    },
+    methods: {
+      onClick(type) {
+        this.$emit("click", type);
+      }
+    }
+  };
+  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", {
+      class: vue.normalizeClass(["uni-card", { "uni-card--full": $props.isFull, "uni-card--shadow": $props.isShadow, "uni-card--border": $props.border }]),
+      style: vue.normalizeStyle({ "margin": $props.isFull ? 0 : $props.margin, "padding": $props.spacing, "box-shadow": $props.isShadow ? $props.shadow : "" })
+    }, [
+      vue.createCommentVNode(" \u5C01\u9762 "),
+      vue.renderSlot(_ctx.$slots, "cover", {}, () => [
+        $props.cover ? (vue.openBlock(), vue.createElementBlock("view", {
+          key: 0,
+          class: "uni-card__cover"
+        }, [
+          vue.createElementVNode("image", {
+            class: "uni-card__cover-image",
+            mode: "widthFix",
+            onClick: _cache[0] || (_cache[0] = ($event) => $options.onClick("cover")),
+            src: $props.cover
+          }, null, 8, ["src"])
+        ])) : vue.createCommentVNode("v-if", true)
+      ], true),
+      vue.renderSlot(_ctx.$slots, "title", {}, () => [
+        $props.title || $props.extra ? (vue.openBlock(), vue.createElementBlock("view", {
+          key: 0,
+          class: "uni-card__header"
+        }, [
+          vue.createCommentVNode(" \u5361\u7247\u6807\u9898 "),
+          vue.createElementVNode("view", {
+            class: "uni-card__header-box",
+            onClick: _cache[1] || (_cache[1] = ($event) => $options.onClick("title"))
+          }, [
+            $props.thumbnail ? (vue.openBlock(), vue.createElementBlock("view", {
+              key: 0,
+              class: "uni-card__header-avatar"
+            }, [
+              vue.createElementVNode("image", {
+                class: "uni-card__header-avatar-image",
+                src: $props.thumbnail,
+                mode: "aspectFit"
+              }, null, 8, ["src"])
+            ])) : vue.createCommentVNode("v-if", true),
+            vue.createElementVNode("view", { class: "uni-card__header-content" }, [
+              vue.createElementVNode("text", { class: "uni-card__header-content-title uni-ellipsis" }, vue.toDisplayString($props.title), 1),
+              $props.title && $props.subTitle ? (vue.openBlock(), vue.createElementBlock("text", {
+                key: 0,
+                class: "uni-card__header-content-subtitle uni-ellipsis"
+              }, vue.toDisplayString($props.subTitle), 1)) : vue.createCommentVNode("v-if", true)
+            ])
+          ]),
+          vue.createElementVNode("view", {
+            class: "uni-card__header-extra",
+            onClick: _cache[2] || (_cache[2] = ($event) => $options.onClick("extra"))
+          }, [
+            vue.createElementVNode("text", { class: "uni-card__header-extra-text" }, vue.toDisplayString($props.extra), 1)
+          ])
+        ])) : vue.createCommentVNode("v-if", true)
+      ], true),
+      vue.createCommentVNode(" \u5361\u7247\u5185\u5BB9 "),
+      vue.createElementVNode("view", {
+        class: "uni-card__content",
+        style: vue.normalizeStyle({ padding: $props.padding }),
+        onClick: _cache[3] || (_cache[3] = ($event) => $options.onClick("content"))
+      }, [
+        vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
+      ], 4),
+      vue.createElementVNode("view", {
+        class: "uni-card__actions",
+        onClick: _cache[4] || (_cache[4] = ($event) => $options.onClick("actions"))
+      }, [
+        vue.renderSlot(_ctx.$slots, "actions", {}, void 0, true)
+      ])
+    ], 6);
+  }
+  var __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render], ["__scopeId", "data-v-19622063"], ["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/uni_modules/uni-card/components/uni-card/uni-card.vue"]]);
+  const _sfc_main$1 = {
+    __name: "userPage",
+    setup(__props) {
+      const confirmExit = () => {
+        uni.showModal({
+          title: "\u6E29\u99A8\u63D0\u793A",
+          content: "\u60A8\u786E\u5B9A\u8981\u9000\u51FA\u767B\u5F55\u5417?",
+          showCancel: true,
+          success: ({ confirm, cancel }) => {
+            if (confirm) {
+              uni.reLaunch({ url: "/pages/index/index" });
+            }
+          }
+        });
+      };
+      return (_ctx, _cache) => {
+        const _component_uni_card = resolveEasycom(vue.resolveDynamicComponent("uni-card"), __easycom_0);
+        return vue.openBlock(), vue.createElementBlock("view", null, [
+          vue.createVNode(_component_uni_card, {
+            "is-shadow": false,
+            onClick: confirmExit
+          }, {
+            default: vue.withCtx(() => [
+              vue.createElementVNode("text", null, "\u9000\u51FA\u767B\u5F55")
+            ]),
+            _: 1
+          })
+        ]);
+      };
+    }
+  };
+  var PagesUserPageUserPage = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/pages/userPage/userPage.vue"]]);
   __definePage("pages/index/index", PagesIndexIndex);
   __definePage("pages/register/register", PagesRegisterRegister);
   __definePage("pages/login/login", PagesLoginLogin);
+  __definePage("pages/petInfo/petInfo", PagesPetInfoPetInfo);
+  __definePage("pages/petImgUpload/petImgUpload", PagesPetImgUploadPetImgUpload);
+  __definePage("pages/petVoiceUpload/petVoiceUpload", PagesPetVoiceUploadPetVoiceUpload);
+  __definePage("pages/userPage/userPage", PagesUserPageUserPage);
   const store = createStore({
-    state: {
-      username: "foo",
-      age: 18
-    },
+    state: {},
     mutations: {},
     actions: {
       loginSystem(context, userInfo) {
         return new Promise((resolve, reject) => {
           userLogin(userInfo).then((res) => {
             resolve(res);
+            if (res.data.code === 0) {
+              uni.reLaunch({ url: "/pages/petInfo/petInfo" });
+            }
           }).catch((err) => {
             reject(err);
           });
@@ -4050,18 +4283,8 @@ if (uni.restoreGlobal) {
       }
     }
   });
-  const _sfc_main = {
-    onLaunch: function() {
-      formatAppLog("log", "at App.vue:4", "App Launch");
-    },
-    onShow: function() {
-      formatAppLog("log", "at App.vue:7", "App Show");
-    },
-    onHide: function() {
-      formatAppLog("log", "at App.vue:10", "App Hide");
-    }
-  };
-  var App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "D:/ProjectRepository/DCloudProjects/uni-ui-test/App.vue"]]);
+  const _sfc_main = {};
+  var App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "D:/ProjectRepository/DCloudProjects/pet-uniapp/App.vue"]]);
   function createApp() {
     const app = vue.createVueApp(App);
     app.use(store);

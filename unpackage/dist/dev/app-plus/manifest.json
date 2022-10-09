@@ -34,7 +34,6 @@
     },
     "popGesture": "close",
     "launchwebview": {
-      "render": "always",
       "id": "1",
       "kernel": "WKWebview"
     },
@@ -99,6 +98,12 @@
       }
     },
     "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#f8f8f8",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
@@ -109,6 +114,38 @@
         "flex-direction": "column"
       },
       "nvueLaunchMode": "normal"
+    },
+    "tabBar": {
+      "position": "bottom",
+      "color": "#d8d4c4",
+      "selectedColor": "#02a5ff",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "blurEffect": "none",
+      "fontSize": "12px",
+      "iconWidth": "24px",
+      "spacing": "3px",
+      "height": "50px",
+      "backgroundColor": "#f8f8f8",
+      "list": [
+        {
+          "text": "宠物信息",
+          "pagePath": "pages/petInfo/petInfo"
+        },
+        {
+          "text": "宠物图像上传",
+          "pagePath": "pages/petImgUpload/petImgUpload"
+        },
+        {
+          "text": "宠物声音上传",
+          "pagePath": "pages/petVoiceUpload/petVoiceUpload"
+        },
+        {
+          "text": "我的",
+          "pagePath": "pages/userPage/userPage"
+        }
+      ],
+      "selectedIndex": 0,
+      "shown": true
     }
   },
   "locale": "zh-Hans",
