@@ -1,10 +1,23 @@
 
+.titleBox,
+.logoBox,
+.container {
+  display: flex;
+  justify-content: center;
+}
+.titleBox {
+  margin-top: 50px;
+}
+.logoBox {
+  margin-top: 50px;
+}
 .container {
   padding: 20px;
   font-size: 14px;
   line-height: 24px;
 }
 .button {
-  /* 上下左右 */
-  margin: 10px 10px 0 0;
+  /* 上右下左 */
+  /* margin: 10px 10px 0 20px; */
+  width: 100px;
 }

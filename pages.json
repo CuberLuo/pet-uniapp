@@ -21,7 +21,8 @@
     {
       "path": "pages/petInfo/petInfo",
       "style": {
-        "navigationBarTitleText": "宠物信息"
+        "navigationBarTitleText": "宠物信息",
+        "enablePullDownRefresh": true
       }
     },
     {
@@ -41,6 +42,18 @@
       "style": {
         "navigationBarTitleText": "我的"
       }
+    },
+    {
+      "path": "pages/petInfoUpload/petInfoUpload",
+      "style": {
+        "navigationBarTitleText": "宠物信息上传"
+      }
+    },
+    {
+      "path": "pages/recognitionResult/recognitionResult",
+      "style": {
+        "navigationBarTitleText": "检测结果"
+      }
     }
   ],
   "globalStyle": {
@@ -58,23 +71,56 @@
     "color": "#d8d4c4",
     "selectedColor": "#02a5ff",
     "backgroundColor": "#f8f8f8",
+    "iconfontSrc": "static/icon/iconfont.ttf",
     "fontSize": "12px",
     "list": [
       {
         "text": "宠物信息",
-        "pagePath": "pages/petInfo/petInfo"
+        "fontSize": "17px",
+        "pagePath": "pages/petInfo/petInfo",
+        "iconfont": {
+          "color": "#d8d4c4",
+          "text": "\ue88f",
+          "selectedText": "\ue88f",
+          "selectedColor": "#02a5ff",
+          "fontSize": "25px"
+        }
       },
       {
         "text": "宠物图像上传",
-        "pagePath": "pages/petImgUpload/petImgUpload"
+        "fontSize": "17px",
+        "pagePath": "pages/petImgUpload/petImgUpload",
+        "iconfont": {
+          "color": "#d8d4c4",
+          "text": "\ue8ba",
+          "selectedText": "\ue8ba",
+          "selectedColor": "#02a5ff",
+          "fontSize": "25px"
+        }
       },
       {
         "text": "宠物声音上传",
-        "pagePath": "pages/petVoiceUpload/petVoiceUpload"
+        "fontSize": "17px",
+        "pagePath": "pages/petVoiceUpload/petVoiceUpload",
+        "iconfont": {
+          "color": "#d8d4c4",
+          "text": "\ue66e",
+          "selectedText": "\ue66e",
+          "selectedColor": "#02a5ff",
+          "fontSize": "25px"
+        }
       },
       {
         "text": "我的",
-        "pagePath": "pages/userPage/userPage"
+        "fontSize": "17px",
+        "pagePath": "pages/userPage/userPage",
+        "iconfont": {
+          "color": "#d8d4c4",
+          "text": "\ue8c8",
+          "selectedText": "\ue8c8",
+          "selectedColor": "#02a5ff",
+          "fontSize": "25px"
+        }
       }
     ]
   }

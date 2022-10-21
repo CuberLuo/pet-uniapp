@@ -8,11 +8,11 @@ const store = createStore({
       return new Promise((resolve, reject) => {
         userLogin(userInfo)
           .then((res) => {
-            resolve(res)
             if (res.data.code === 0) {
-              //关闭所有页面后跳转,防止顶部导航栏左上角出现返回箭头
-              uni.reLaunch({ url: '/pages/petInfo/petInfo' })
+              const uid = res.data.data
+              uni.setStorageSync('uid', uid)
             }
+            resolve(res)
           })
           .catch((err) => {
             reject(err)

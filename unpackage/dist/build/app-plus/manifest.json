@@ -7,8 +7,8 @@
   "id": "__UNI__4D66447",
   "name": "宠物情绪识别",
   "version": {
-    "name": "1.0.0",
-    "code": "100"
+    "name": "1.0.1",
+    "code": 101
   },
   "description": "",
   "developer": {
@@ -34,7 +34,6 @@
     },
     "popGesture": "close",
     "launchwebview": {
-      "render": "always",
       "id": "1",
       "kernel": "WKWebview"
     },
@@ -83,9 +82,15 @@
         "useOriginalMsgbox": true
       },
       "google": {
-        "permissions": [],
+        "permissions": [
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>"
+        ],
         "abiFilters": [
-          "armeabi-v7a"
+          "armeabi-v7a",
+          "arm64-v8a",
+          "x86"
         ],
         "autoSdkPermissions": true
       },
@@ -101,17 +106,104 @@
         }
       }
     },
+    "nativePlugins": {
+      "Aq-ChooseFile": {
+        "__plugin_info__": {
+          "name": "文件选择，支持自定义路径，自定义筛选类型，多选",
+          "description": "支持android 11（30）文件选择，支持自定义路径",
+          "platforms": "Android",
+          "url": "https://ext.dcloud.net.cn/plugin?id=5263",
+          "android_package_name": "uni.UNI4D66447",
+          "ios_bundle_id": "",
+          "isCloud": true,
+          "bought": 1,
+          "pid": "5263",
+          "parameters": {}
+        }
+      }
+    },
     "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#f8f8f8",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
-      "compilerVersion": "3.5.3",
+      "compilerVersion": "3.6.4",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
       "nvue": {
         "flex-direction": "column"
       },
       "nvueLaunchMode": "normal"
+    },
+    "tabBar": {
+      "position": "bottom",
+      "color": "#d8d4c4",
+      "selectedColor": "#02a5ff",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "blurEffect": "none",
+      "fontSize": "12px",
+      "iconWidth": "24px",
+      "spacing": "3px",
+      "height": "50px",
+      "backgroundColor": "#f8f8f8",
+      "iconfontSrc": "static/icon/iconfont.ttf",
+      "list": [
+        {
+          "text": "宠物信息",
+          "fontSize": "17px",
+          "pagePath": "pages/petInfo/petInfo",
+          "iconfont": {
+            "color": "#d8d4c4",
+            "text": "",
+            "selectedText": "",
+            "selectedColor": "#02a5ff",
+            "fontSize": "25px"
+          }
+        },
+        {
+          "text": "宠物图像上传",
+          "fontSize": "17px",
+          "pagePath": "pages/petImgUpload/petImgUpload",
+          "iconfont": {
+            "color": "#d8d4c4",
+            "text": "",
+            "selectedText": "",
+            "selectedColor": "#02a5ff",
+            "fontSize": "25px"
+          }
+        },
+        {
+          "text": "宠物声音上传",
+          "fontSize": "17px",
+          "pagePath": "pages/petVoiceUpload/petVoiceUpload",
+          "iconfont": {
+            "color": "#d8d4c4",
+            "text": "",
+            "selectedText": "",
+            "selectedColor": "#02a5ff",
+            "fontSize": "25px"
+          }
+        },
+        {
+          "text": "我的",
+          "fontSize": "17px",
+          "pagePath": "pages/userPage/userPage",
+          "iconfont": {
+            "color": "#d8d4c4",
+            "text": "",
+            "selectedText": "",
+            "selectedColor": "#02a5ff",
+            "fontSize": "25px"
+          }
+        }
+      ],
+      "selectedIndex": 0,
+      "shown": true
     }
   },
   "locale": "zh-Hans",

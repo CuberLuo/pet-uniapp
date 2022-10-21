@@ -1,0 +1,13 @@
+
+.musicContainer[data-v-06c02246] {
+  margin: 50px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #a3aca7;
+}
+.music[data-v-06c02246] {
+  width: 50%;
+}
+uni-button[data-v-06c02246] {
+  margin: 10px 12px 10px 12px;
+}

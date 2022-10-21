@@ -1,12 +1,14 @@
 <template>
-  <view>
-    <!-- <view>用户名：{{username}}</view>
-		<view>年龄：{{age}}</view> -->
+  <view class="titleBox">
+    <h1>欢迎登录</h1>
+  </view>
+
+  <view class="formBox">
     <uni-forms ref="loginForm" :modelValue="formData" :rules="rules">
-      <uni-forms-item name="username" label="用户名" required
+      <uni-forms-item class="formItem" name="username" label="用户名" required
         ><uni-easyinput v-model="formData.username" placeholder="请输入用户名"
       /></uni-forms-item>
-      <uni-forms-item name="password" label="密码" required
+      <uni-forms-item class="formItem" name="password" label="密码" required
         ><uni-easyinput
           type="password"
           v-model="formData.password"
@@ -22,8 +24,6 @@ import { computed, ref, reactive } from 'vue'
 import { useStore } from 'vuex'
 
 const store = useStore()
-// const username=computed(()=>store.state.username)
-// const age=computed(()=>store.state.age)
 const loginForm = ref()
 const formData = reactive({
   username: '',
@@ -54,11 +54,13 @@ const submitLogin = () => {
       store
         .dispatch('loginSystem', res)
         .then((res) => {
-          console.log(res)
           if (res.data.code === 0) {
             uni.showToast({
               title: '登录成功'
             })
+            uni.setStorageSync('username', formData.username)
+            //关闭所有页面后跳转,防止顶部导航栏左上角出现返回箭头
+            uni.reLaunch({ url: '/pages/petInfo/petInfo' })
           } else if (res.data.code === 1001) {
             uni.showToast({
               title: '用户名不存在',
@@ -72,7 +74,6 @@ const submitLogin = () => {
           }
         })
         .catch((err) => {
-          console.log(err)
           uni.showToast({
             title: '登录失败',
             icon: 'error'
@@ -80,10 +81,25 @@ const submitLogin = () => {
         })
     })
     .catch((err) => {
-      console.log('invalid form')
-      console.log(err)
+      uni.showToast({
+        title: err,
+        icon: 'error'
+      })
     })
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.titleBox {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.formBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.formItem {
+  width: 360px;
+}
+</style>

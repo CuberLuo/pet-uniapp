@@ -1,10 +1,12 @@
 <script></script>
 
 <style lang="scss">
+@import './common/uni.css';
 /*每个页面公共css */
 @import '@/uni_modules/uni-scss/index.scss';
 /* #ifndef APP-NVUE */
 @import '@/static/customicons.css';
+@import url('static/icon/iconfont.css');
 // 设置整个项目的背景色
 page {
   background-color: #f5f5f5;

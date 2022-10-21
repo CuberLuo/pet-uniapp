@@ -710,3 +710,17 @@
 }
 /* 水平间距 */
 /* 水平间距 */
+/* 水平间距 */
+/* 水平间距 */
+.titleBox {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.formBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.formItem {
+  width: 360px;
+}

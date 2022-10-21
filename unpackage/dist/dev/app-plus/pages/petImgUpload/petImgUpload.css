@@ -1,10 +1,14 @@
 
 .cameraContainer[data-v-1ed12026] {
+  margin: 50px 0 10px 0;
   display: flex;
   justify-content: center;
-  border: 2px solid #f9d0c5;
+  border: 2px solid #a3aca7;
 }
 .camera[data-v-1ed12026] {
-  width: 100px;
-  border: 2px solid #2fd699;
+  width: 50%;
+  border: 2px dashed #ff3c00;
+}
+uni-button[data-v-1ed12026] {
+  margin: 10px 12px 10px 12px;
 }
